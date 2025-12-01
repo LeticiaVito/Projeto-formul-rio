@@ -1,0 +1,163 @@
+.main-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-container select{
+    width: 99.5%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+
+}
+
+.form-container input,
+
+.form-container textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+
+.form-container input[type="file"] {
+    padding: 10px;
+  
+
+}
+
+
+.form-container button {
+    background-color: #cfa20b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+   
+}
+
+
+.form-container button:hover {
+    background-color: #8a6b06;
+}
+
+
+.form-container .file-label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.form-container .file-container {
+    margin-bottom: 20px;
+}
+
+
+.form-container .file-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+
+
+  /* Estilo do Modal */
+.modal {
+    display: none; /* Inicialmente o modal é escondido */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1; /* Coloca o modal acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro e transparente */
+    overflow: auto; /* Permite rolar se necessário */
+    padding-top: 60px; /* Espaço para o conteúdo */
+}
+
+/* Estilo do conteúdo do Modal */
+.modal-content {
+    background-color: #fff; /* Cor de fundo branca */
+    margin: 5% auto; /* Centraliza o modal na tela */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 80%; /* Largura do modal (80% da tela) */
+    max-width: 500px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o modal */
+}
+
+/* Estilo do botão de fechamento */
+.close {
+    color: #aaa; /* Cor do botão */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold;
+    position: absolute; /* Posiciona no canto superior direito */
+    top: 10px;
+    right: 20px;
+    cursor: pointer; /* Indicador de que é clicável */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Muda a cor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer;
+}
+
+/* Estilo para a mensagem no modal */
+#modalMessage {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 500;
+}
